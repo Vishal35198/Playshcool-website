@@ -1,0 +1,147 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.fullscreen {
+    height: 100vh;
+}
+
+.border-left {
+    border-left-style: solid;
+    border-left-width: 0.15rem;
+    border-left-color: rgba(0, 0, 0, 0.329);
+}
+
+html {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 0.9rem;
+}
+    body {
+    }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            margin: auto;
+            background-color: rgba(0, 128, 0, 0.705);
+        }
+            header img {
+                width: 10rem;
+                height: 4rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            header nav {
+                margin: auto 0rem;
+                font-size: 1.2rem;
+            }
+                nav a {
+                    margin-left: 1rem;
+                }                
+                .header-contact {
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto 0rem;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    color:rgb(0, 0, 0);
+                }
+    
+    #section-0 {        
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
+        animation-name: changephoto;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes changephoto {
+        0%   {background-image: url(media/hero.jpg)}
+        25%  {background-image: url(media/vecteezy_children-playing-at-playground_8137751.jpg)}
+        50%  {background-image: url(media/hero.jpg)}
+        75%  {background-image: url(media/vecteezy_children-playing-at-playground_8137751.jpg)} 
+        100% {background-image: url(media/hero.jpg)}
+    }
+
+    #section-1, #section-2 {
+        text-align: center;
+        padding: 20% 0% 10%;
+    }   
+        #section-1, #section-2 h4 {
+            margin: auto;
+        }
+        #section-1, #section-2 p {
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            gap: 1rem;
+            width: 80%;
+            margin: auto;
+        }
+
+    #section-3, #section-4{
+        text-align: center;
+        padding: 10% 0%;
+    }
+        .thumbnail img {
+            width: 100%;
+        }
+        .thumbnail div {
+            background-color: rgba(128, 128, 128, 0.233);
+            padding-bottom: 1rem;
+        }
+
+        .thumbnail h2, p {
+            margin: 0rem;
+            line-height: 2rem;
+        }
+    
+    #section-4{
+        margin: auto;
+        width: 80%;
+    }
+
+    #section-5 {
+        background-color: rgba(0, 128, 0, 0.705); 
+        color: white;  
+        width: 100%;
+        padding: 1rem 0;
+    }
+    #section-5 .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+        margin: auto;
+    }
+        .addresses {
+            display: flex;
+            flex-direction: column;
+        }   
+            .addresses i {
+                margin-bottom: 0.5rem;
+            }
+            
+        .social {
+            margin: auto;
+        }
+            .social i {
+                margin-right: 1rem;
+            }
