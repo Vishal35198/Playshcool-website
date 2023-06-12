@@ -237,13 +237,16 @@ html {
     }
 }
 
-@media(max-height: 550px) { /*   Smartphones flipped   */
+@media(max-height:800px) {
+    #section-3, #section-4 {
+        height: auto;
+    }
+}
+
+@media(max-height: 600px) { /*   Smartphones flipped   */
     #navigation-box {
         font-size: 1.5rem;
         top: 29%;
-    }
-    #section-3, #section-4 {
-        height: auto;
     }
 }
 
